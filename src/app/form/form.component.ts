@@ -11,7 +11,8 @@ display:boolean=false;
     fname:'',
     lname:'',
     mno:'',
-    address:''
+    address:'',
+    tableNo :''
   }
   constructor() { }
 

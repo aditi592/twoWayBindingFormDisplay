@@ -13,6 +13,10 @@
    
         <p>Address: </p>
             <textarea [(ngModel)]=form.address></textarea>
+
+            <p>Table Of : </p>
+            <input type="tel" [(ngModel)]=form.tableNo>
+       
     
         <p><button type="button" (click)="submit()">Submit</button></p>
 </section>
@@ -34,10 +38,15 @@
     </div>
 
     <div>
-       <p> Address: </p>
+       <p> Address </p>
        {{form.address}}
         
     </div>
+    <div>
+        <p> Table  </p>
+       <app-table [value]="form.tableNo"></app-table>
+         
+     </div>
     <div>
         <button type="button" (click)="displayValue()">Refresh</button>
     </div>
