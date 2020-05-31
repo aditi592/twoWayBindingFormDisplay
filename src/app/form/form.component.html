@@ -1,0 +1,45 @@
+<body>
+<section class="decor"  id="input" *ngIf="!display">
+        
+    <h1>Fill The Details!</h1>
+        <p>FirstName : </p>
+        <input type="text" [(ngModel)]=form.fname>
+    
+        <p>LastName : </p>
+        <input type="text" [(ngModel)]=form.lname>
+   
+        <p>Mobile No : </p>
+        <input type="tel" [(ngModel)]=form.mno>
+   
+        <p>Address: </p>
+            <textarea [(ngModel)]=form.address></textarea>
+    
+        <p><button type="button" (click)="submit()">Submit</button></p>
+</section>
+
+<section class="decor" id="display" *ngIf="display">
+    <div>
+        <p>FirstName  </p>
+         {{form.fname}}
+    </div>
+        
+    <div>
+        <p>LastName  </p>
+        {{form.lname}}
+    </div>
+   
+    <div>
+       <p> Mobile No  </p> {{form.mno}}
+       
+    </div>
+
+    <div>
+       <p> Address: </p>
+       {{form.address}}
+        
+    </div>
+    <div>
+        <button type="button" (click)="displayValue()">Refresh</button>
+    </div>
+</section>
+</body>

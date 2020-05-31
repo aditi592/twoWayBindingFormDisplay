@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "twoWayBinding"
+    }
+  },
+  "defaultProject": "twoWayBinding",
+  "cli": {
+    "analytics": false
+  }
 }
